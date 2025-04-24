@@ -1,4 +1,5 @@
 import { createServerFn } from '@tanstack/react-start'
+import { logMiddleware } from './loggingMiddleware'
 
 export type WeatherData = {
   location: string
@@ -9,6 +10,7 @@ export type WeatherData = {
 
 
 export const getWeather = createServerFn({ method: 'GET' })
+.middleware([logMiddleware])
   .validator((d: string) => d) // Validate that the input is a string (location name)
   .handler(async ({ data: location }) => {
     console.info(`Fetching weather data for ${location}...`)
