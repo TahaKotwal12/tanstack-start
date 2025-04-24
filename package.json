@@ -15,6 +15,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^2.6.0",
+    "tanstack-start-example-basic": "file:",
     "vinxi": "0.5.3"
   },
   "devDependencies": {
