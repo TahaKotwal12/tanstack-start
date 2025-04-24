@@ -1,5 +1,5 @@
 import { createServerFn } from '@tanstack/react-start'
-import { logMiddleware } from './loggingMiddleware'
+import { logMiddleware } from '../middleware/loggingMiddleware'
 
 export type WeatherData = {
   location: string
