@@ -1,6 +1,6 @@
 import { registerGlobalMiddleware } from '@tanstack/react-start'
-import { logMiddleware } from './middleware/loggingMiddleware'
+import { logMiddleware, preLogMiddleware } from './middleware/loggingMiddleware'
 
 registerGlobalMiddleware({
-  middleware: [logMiddleware],
+  middleware: [logMiddleware, preLogMiddleware]
 })

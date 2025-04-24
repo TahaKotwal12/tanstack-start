@@ -1,6 +1,6 @@
 import { createMiddleware } from '@tanstack/react-start'
 
-const preLogMiddleware = createMiddleware()
+export const preLogMiddleware = createMiddleware()
   .client(async (ctx) => {
     const clientTime = new Date()
 
